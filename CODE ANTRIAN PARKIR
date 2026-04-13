@@ -1,0 +1,111 @@
+from datetime import datetime
+
+class CircularQueueParkir:
+    def __init__(self, kapasitas):
+        self.kapasitas = kapasitas
+        self.queue = [None] * kapasitas
+        self.front = -1
+        self.rear = -1
+
+    def is_empty(self):
+        return self.front == -1
+
+    def is_full(self):
+        return (self.rear + 1) % self.kapasitas == self.front
+
+    def enqueue(self, plat):
+        if self.is_full():
+            print("Parkiran penuh!")
+            return
+
+        waktu_masuk = datetime.now()
+        kendaraan = {"plat": plat, "masuk": waktu_masuk}
+
+        if self.is_empty():
+            self.front = self.rear = 0
+        else:
+            self.rear = (self.rear + 1) % self.kapasitas
+
+        self.queue[self.rear] = kendaraan
+        print(f"{plat} masuk jam {waktu_masuk.strftime('%H:%M:%S')}")
+
+    def dequeue(self):
+        if self.is_empty():
+            print("Parkiran kosong!")
+            return
+
+        kendaraan = self.queue[self.front]
+        waktu_keluar = datetime.now()
+
+        durasi = waktu_keluar - kendaraan["masuk"]
+        jam = durasi.total_seconds() / 3600
+
+        tarif = 5000
+        biaya = int(jam * tarif) + tarif
+
+        print("\n=== STRUK PARKIR ===")
+        print(f"Plat   : {kendaraan['plat']}")
+        print(f"Masuk  : {kendaraan['masuk'].strftime('%H:%M:%S')}")
+        print(f"Keluar : {waktu_keluar.strftime('%H:%M:%S')}")
+        print(f"Durasi : {jam:.2f} jam")
+        print(f"Biaya  : Rp {biaya}")
+        print("====================")
+
+        if self.front == self.rear:
+            self.front = self.rear = -1
+        else:
+            self.front = (self.front + 1) % self.kapasitas
+
+    def peek(self):
+        if self.is_empty():
+            print("Parkiran kosong!")
+        else:
+            kendaraan = self.queue[self.front]
+            print(f"Depan: {kendaraan['plat']}")
+
+    def display(self):
+        if self.is_empty():
+            print("Parkiran kosong!")
+            return
+
+        i = self.front
+        print("\nIsi parkiran:")
+        while True:
+            kendaraan = self.queue[i]
+            print(f"{kendaraan['plat']} - {kendaraan['masuk'].strftime('%H:%M:%S')}")
+            if i == self.rear:
+                break
+            i = (i + 1) % self.kapasitas
+
+
+# PROGRAM UTAMA
+kapasitas = int(input("Masukkan kapasitas parkir: "))
+parkir = CircularQueueParkir(kapasitas)
+
+while True:
+    print("\n1. Masuk")
+    print("2. Keluar")
+    print("3. Peek")
+    print("4. Tampilkan")
+    print("5. Keluar Program")
+
+    pilih = input("Pilih: ")
+
+    if pilih == "1":
+        plat = input("Plat nomor: ")
+        parkir.enqueue(plat)
+
+    elif pilih == "2":
+        parkir.dequeue()
+
+    elif pilih == "3":
+        parkir.peek()
+
+    elif pilih == "4":
+        parkir.display()
+
+    elif pilih == "5":
+        break
+
+    else:
+        print("Pilihan salah!")
