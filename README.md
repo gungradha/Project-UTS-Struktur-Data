@@ -14,7 +14,7 @@ Konsep utama yang digunakan adalah **FIFO (First In First Out)**, di mana kendar
 
 ## 🖼️ Flowchart Sistem
 
-![Flowchart](images/flowchart.png)
+![Flowchart](https://github.com/niaparamita/project-tugas/blob/6e07a62de4c7a0b47dbb0b04fd674a3f430d64f6/Diagram%20sistem%20antrian%20parkir%20circular%20queue.png)
 
 ---
 
