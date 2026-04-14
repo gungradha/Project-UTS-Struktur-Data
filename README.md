@@ -52,9 +52,20 @@ Konsep utama yang digunakan adalah **FIFO (First In First Out)**, di mana kendar
 
 ---
 
-## ▶️ Cara Menjalankan
+## ▶️ Cara Sistem Bekerja
 
+Alur kerja sistem dimulai dengan input kapasitas parkir, kemudian program menampilkan menu utama untuk dipilih pengguna.
 
+Proses utamanya yaitu:
+
+Enqueue: Menambahkan kendaraan ke antrian dan mencatat waktu masuk jika kapasitas belum penuh.
+Dequeue: Mengeluarkan kendaraan terdepan, menghitung durasi parkir, dan menentukan biaya.
+Peek: Menampilkan kendaraan paling depan tanpa menghapus data.
+Display: Menampilkan seluruh kendaraan dalam antrian.
+
+Seluruh proses yang terjadi pada program menggunakan operasi modulo supaya menjaga sifat melingkar pada circular queue.
+
+Biaya parkir akan dihitung dengan berdasarkan lama waktu kendaraan berada di area parkir, yaitu selisih antara waktu masuk dan waktu keluar yang dikonversi ke dalam satuan jam.
 
 ## 📊 Keunggulan
 
