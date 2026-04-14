@@ -20,7 +20,7 @@ Konsep utama yang digunakan adalah **FIFO (First In First Out)**, di mana kendar
 
 ## 🔁 Diagram Circular Queue
 
-![Circular Queue](images/diagram.png)
+![Circular Queue](https://github.com/niaparamita/project-tugas/blob/6e07a62de4c7a0b47dbb0b04fd674a3f430d64f6/Antrian%20Melingkar%20pada%20Sistem%20Parkir.png)
 
 ---
 
