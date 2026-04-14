@@ -4,7 +4,9 @@
 
 ## 📌 Deskripsi
 
-Program ini merupakan implementasi **struktur data Circular Queue** menggunakan bahasa Python untuk mensimulasikan sistem antrian parkir pada area luas seperti hotel atau restoran.
+Queue atau antrian adalah sekumpulan data yang penambahan elemennya dilakukan melalui satu sisi (rear) dan penghapusan elemennya dilakukan melalui sisi lainnya (front). Konsep ini mengikuti prinsip FIFO (First-In First-Out), di mana elemen yang pertama kali masuk akan menjadi yang pertama kali keluar, mirip dengan antrian kendaraan di gerbang parkir. 
+
+Program ini merupakan implementasi **struktur data dengan Circular Queue** yang  menggunakan bahasa Python untuk mensimulasikan sistem antrian parkir pada area luas seperti hotel atau restoran.
 
 Konsep utama yang digunakan adalah **FIFO (First In First Out)**, di mana kendaraan yang masuk terlebih dahulu akan keluar terlebih dahulu.
 
