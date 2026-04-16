@@ -14,11 +14,11 @@ Konsep utama yang digunakan adalah **FIFO (First In First Out)**, di mana kendar
 
 ## 🖼️ Flowchart Sistem
 
-![Flowchart](   )
+![Flowchart]( https://github.com/niaparamita/project-tugas/blob/6bd9aa1d1e0ff17eeb6015ecafb1e203971bea2b/flowchart%20struktur%20data.png  )
 
 ---
 
-## 🔁 Diagram Circular Queue
+## 🔁 Diagram sistem Queue
 
 ![Circular Queue](  )
 
