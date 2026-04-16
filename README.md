@@ -14,7 +14,7 @@ Konsep utama yang digunakan adalah **FIFO (First In First Out)**, di mana kendar
 
 ## 🖼️ Flowchart Sistem
 
-![Flowchart](<img width="570" height="638" alt="image" src="https://github.com/user-attachments/assets/a5beb91a-18da-420e-a5e8-d84be9c1a904" />)
+![Flowchart](   )
 
 ---
 
