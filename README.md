@@ -14,13 +14,13 @@ Konsep utama yang digunakan adalah **FIFO (First In First Out)**, di mana kendar
 
 ## 🖼️ Flowchart Sistem
 
-![Flowchart](https://github.com/niaparamita/project-tugas/blob/6e07a62de4c7a0b47dbb0b04fd674a3f430d64f6/Diagram%20sistem%20antrian%20parkir%20circular%20queue.png)
+![Flowchart](<img width="570" height="638" alt="image" src="https://github.com/user-attachments/assets/a5beb91a-18da-420e-a5e8-d84be9c1a904" />)
 
 ---
 
 ## 🔁 Diagram Circular Queue
 
-![Circular Queue](<img width="570" height="638" alt="image" src="https://github.com/user-attachments/assets/a5beb91a-18da-420e-a5e8-d84be9c1a904" />)
+![Circular Queue](  )
 
 ---
 
