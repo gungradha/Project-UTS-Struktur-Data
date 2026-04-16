@@ -1,12 +1,12 @@
 # Project-UTS-Struktur-Data
 
-# 🚗 Sistem Antrian Parkir (Circular Queue)
+# 🚗 Sistem Antrian Parkir (Queue)
 
 ## 📌 Deskripsi
 
 Queue atau antrian adalah sekumpulan data yang penambahan elemennya dilakukan melalui satu sisi (rear) dan penghapusan elemennya dilakukan melalui sisi lainnya (front). Konsep ini mengikuti prinsip FIFO (First-In First-Out), di mana elemen yang pertama kali masuk akan menjadi yang pertama kali keluar, mirip dengan antrian kendaraan di gerbang parkir. 
 
-Program ini merupakan implementasi **struktur data dengan Circular Queue** yang  menggunakan bahasa Python untuk mensimulasikan sistem antrian parkir pada area luas seperti hotel atau restoran.
+Program ini merupakan implementasi **struktur data dengan Queue** yang  menggunakan bahasa Python untuk mensimulasikan sistem antrian parkir pada area luas seperti hotel atau restoran.
 
 Konsep utama yang digunakan adalah **FIFO (First In First Out)**, di mana kendaraan yang masuk terlebih dahulu akan keluar terlebih dahulu.
 
@@ -20,16 +20,15 @@ Konsep utama yang digunakan adalah **FIFO (First In First Out)**, di mana kendar
 
 ## 🔁 Diagram Circular Queue
 
-![Circular Queue](https://github.com/niaparamita/project-tugas/blob/6e07a62de4c7a0b47dbb0b04fd674a3f430d64f6/Antrian%20Melingkar%20pada%20Sistem%20Parkir.png)
+![Circular Queue](<img width="570" height="638" alt="image" src="https://github.com/user-attachments/assets/a5beb91a-18da-420e-a5e8-d84be9c1a904" />)
 
 ---
 
 ## 🧠 Konsep yang Digunakan
 
 * Queue (Antrian)
-* Circular Queue (Queue Melingkar)
 * FIFO (First In First Out)
-* Array (List Python)
+* Linked List (List Python)
 * Waktu real-time (datetime)
 
 ---
